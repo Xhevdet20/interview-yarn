@@ -12,8 +12,6 @@ const NUM_ITEMS = 10;
 
 const initialData: Item[] = [...Array(NUM_ITEMS)].map(mapIndexToData);
 
-console.log(initialData[0])
-
 export default function Basic() {
   const [data, setData] = useState(initialData);
 

@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     borderBlockColor : 'rgba(178, 178, 178, 1)',
     minHeight: 23,
     backgroundColor : '#FFFFFF'
-
   },
   new : {
     backgroundColor : '#EE8A35',

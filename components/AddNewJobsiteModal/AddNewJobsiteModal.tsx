@@ -60,12 +60,10 @@ function AddNewJobsiteModal(props: Props): JSX.Element {
     ]
 
     // const arrayOfObjects = simpleArray.map(item => ({ name: item, val: "test" }));
-    console.log(categoryValue);
     let cat: any[] = [];
      categoryValue.forEach(catogry => {
       cat.push({ "name": catogry, categoryItems:categoryItems })
     })
-    console.log(cat)
     // const cates = categoryValue.map(cat => ({ "name": cat, categoryItems:categoryItems }))
 
     // console.log(cates)

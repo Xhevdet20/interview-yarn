@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import styles from './DashboardDnD.styles';
 import {Category, JobSite} from '../../libs/types';
-import JobSiteCard from '../JobSiteCard';
+import DashboardCard from '../DashboardCard';
 import DraggableFlatList, { RenderItemParams, ScaleDecorator } from 'react-native-draggable-flatlist';
 
 interface Props {
@@ -23,7 +23,7 @@ function DashbaordDnD(props: Props): JSX.Element {
           onLongPress={drag}
           disabled={isActive}
         >
-          <JobSiteCard
+          <DashboardCard
           data={item}
           key={item.id}
           index={item.id}
@@ -34,23 +34,6 @@ function DashbaordDnD(props: Props): JSX.Element {
       </ScaleDecorator>
     );
   };
-
-
-
-  // return (
-  //   <View>
-  //     {props.filteredData.map((element, index) => (
-  //       <JobSiteCard
-  //         data={element}
-  //         key={index}
-  //         index={index}
-  //         showModalJobsiteNavigate={props.showModalJobsiteNavigate}
-  //         setClickedRowCaegories={props.setClickedRowCaegories}
-  //       />
-  //     ))}
-  //   </View>
-  // );
-
 
   return (
     <DraggableFlatList

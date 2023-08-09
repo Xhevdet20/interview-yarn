@@ -3,7 +3,7 @@ import React, {useEffect, useMemo, useState} from 'react';
 import {View, Text, SafeAreaView} from 'react-native';
 import styles from './Dashboard.styles';
 import Header from '../../components/Header';
-import JobSiteCard from '../../components/JobSiteCard';
+import DashboardCard from '../../components/DashboardCard';
 import InfoCardList from '../../components/InfoCardList';
 import {Button, PaperProvider} from 'react-native-paper';
 import AddNewJobsiteModal from '../../components/AddNewJobsiteModal';
@@ -69,10 +69,9 @@ function Dashboard(props: Props): JSX.Element {
   }, [searchText, filteredData]);
 
   const handleSearch = (text: string) => {
-    console.log(text)
     setSearchText(text);
     const filteredTableData = dummyJobSiteObj.filter(element => {
-      const rowData = (element.title + ' ' + element.status).toLowerCase();
+      const rowData = (element.title + ' ' + element.status + " " + element.id).toLowerCase();
       return rowData.includes(text.toLowerCase());
     });
     setFilteredData(filteredTableData);

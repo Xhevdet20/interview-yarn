@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import styles from './JobsiteCard.styles';
+import styles from './DashboardCard.styles';
 import { Category, JobSite } from '../../libs/types';
 import Go from 'react-native-vector-icons/Entypo';
 
@@ -12,7 +12,7 @@ interface Props {
   setClickedRowCaegories : React.Dispatch<React.SetStateAction<Category[]>>
 }
  
-function JobSiteCard(props: Props): JSX.Element {
+function DashboardCard(props: Props): JSX.Element {
 
   const openNavModal = () => {
     props.setClickedRowCaegories(props.data.categories);
@@ -33,4 +33,4 @@ function JobSiteCard(props: Props): JSX.Element {
   );
 }
 
-export default JobSiteCard;
+export default DashboardCard;

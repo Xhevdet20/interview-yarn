@@ -9,7 +9,16 @@ export interface JobSite {
 
 export interface Category {
   name : string;
-  categoryItems : Array<[string, string, string, string, string]>;
+  categoryItems : CategoryItem[];
+}
+
+export interface CategoryItem  {
+  id : string;
+  item: string;
+  quantity : string;
+  description : string;
+  notes : string;
+
 }
 
 

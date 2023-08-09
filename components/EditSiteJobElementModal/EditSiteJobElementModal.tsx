@@ -3,28 +3,28 @@ import {Button, Modal, Portal, TextInput, Title} from 'react-native-paper';
 import styles from './EditSiteJobElementModal.styles';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {View} from 'react-native';
+import { CategoryItem } from '../../libs/types';
 
 interface Props {
   visible: boolean;
   hideModal: () => void;
   filteredData: any;
   setFilteredData: React.Dispatch<React.SetStateAction<any[]>>;
-  rowData : string[];
+  rowData : CategoryItem;
 }
 
 function EditSiteJobElementModal(props: Props): JSX.Element {
 
-  const [item, setItem] = useState<string>(props.rowData[1]);
-  const [quantity, setQuantity] = useState<string>(props.rowData[2]);
-  const [description, setDescription] = useState<string>(props.rowData[3]);
-  const [notes, setNotes] = useState<string>(props.rowData[4]);
+  const [item, setItem] = useState<string>(props.rowData.item);
+  const [quantity, setQuantity] = useState<string>(props.rowData.quantity);
+  const [description, setDescription] = useState<string>(props.rowData.description);
 
 
   useEffect(() => {
-    setItem(props.rowData[1]);
-    setQuantity(props.rowData[2])
-    setDescription(props.rowData[3])
-    setNotes(props.rowData[4])
+    setItem(props.rowData.item);
+    setQuantity(props.rowData.quantity)
+    setDescription(props.rowData.description)
+    // setNotes(props.rowData[4])
   }, [props.rowData]);
 
   const handleItemChange = (text: string) => {
@@ -36,20 +36,17 @@ function EditSiteJobElementModal(props: Props): JSX.Element {
   const handleDescriptionChange = (text: string) => {
     setDescription(text);
   };
-  const handleNotesChange = (text: string) => {
-    setNotes(text);
-  };
+
   const containerStyle = {backgroundColor: 'white'};
 
-  // const editElement = () => {
-  // }
-
    const updateTableDataByFirstValue = () => {
-    props.setFilteredData((prevData: any[]) => {
-      return prevData.map((row: any[]) => {
-        if (row[0] === props.rowData[0]) {
+    console.log("this is called")
+    props.setFilteredData((prevData: CategoryItem[]) => {
+      return prevData.map((row: CategoryItem) => {
+        console.log(row)
+        if (row.id === props.rowData.id) {
           // Replace the row with the updated data
-          return [props.rowData[0], item, quantity, description, notes];
+          return {id : props.rowData.id, item, quantity, description}
         }
         return row;
       });
@@ -93,14 +90,14 @@ function EditSiteJobElementModal(props: Props): JSX.Element {
             underlineColor={'none'}
           />
 
-          <TextInput
+          {/* <TextInput
             label="Notes"
             value={notes}
             onChangeText={handleNotesChange}
             mode="flat"
             style={styles.input}
             underlineColor={'none'}
-          />
+          /> */}
 
           <View style={styles.buttons}>
             <Button

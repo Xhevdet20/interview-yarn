@@ -1,288 +1,6 @@
 import {JobSite} from './types';
 
 export const dummyJobSiteObj: JobSite[] = [
-  // {
-  //   id: '1',
-  //   title: 'Broadway, Queens, NY',
-  //   status: 'New',
-  //   color: '#EE8A35',
-  //   category: ['Scaffold'],
-  //   categoryItems : [
-  //     [
-  //       '1',
-  //       'G4229',
-  //       '2',
-  //       'lorem ipsum dolor sit amet',
-  //       'lorem ipsum dolor sit amet',
-  //     ],
-  //     [
-  //       '2',
-  //       'M7241',
-  //       '3',
-  //       'lorem ipsum dolor sit amet',
-  //       'lorem ipsum dolor sit amet',
-  //     ],
-  //     [
-  //       '3',
-  //       'M9479',
-  //       '7',
-  //       'lorem ipsum dolor sit amet',
-  //       'lorem ipsum dolor sit amet',
-  //     ],
-  //   ]
-  // },
-  // {
-  //   id: '2',
-  //   title: 'Main Street, Brooklyn',
-  //   status: 'New',
-  //   color: '#EE8A35',
-  //   category: ['Sidewalk Shed'],
-  //   categoryItems :  [[
-  //     '4',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '5',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '6',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '3',
-  //   title: 'Lexinton Aveue, Manhattan',
-  //   status: 'Under Judgement',
-  //   color: '#B3D99B',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '7',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '8',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '9',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '4',
-  //   title: 'Park Place, Bronx',
-  //   status: 'Under Judgement',
-  //   color: '#B3D99B',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '10',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '11',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '12',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '5',
-  //   title: 'Riverside Drive, Staten Island',
-  //   status: 'Open',
-  //   color: '#E9C466',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '13',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '14',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '15',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '6',
-  //   title: 'Union Street, Queens',
-  //   status: 'Open',
-  //   color: '#E9C466',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '16',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '17',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '18',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '7',
-  //   title: 'Fulton Street, Brooklyn',
-  //   status: 'Open',
-  //   color: '#E9C466',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '19',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '20',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '21',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '8',
-  //   title: 'Madison Avenue, Manhattan',
-  //   status: 'Closed',
-  //   color: '#7AC14D',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '4',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '5',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '6',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '9',
-  //   title: 'Broadway, Bronx, NY',
-  //   status: 'Closed',
-  //   color: '#7AC14D',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '4',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '5',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '6',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
-  // {
-  //   id: '10',
-  //   title: 'Central Avenue, Staten Island',
-  //   status: 'Closed',
-  //   color: '#7AC14D',
-  //   category: ['Sidewalk Shed', 'Scaffold'],
-  //   categoryItems :  [[
-  //     '4',
-  //     'S2507',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '5',
-  //     'A6846',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],
-  //   [
-  //     '6',
-  //     'F3785',
-  //     '10',
-  //     'lorem ipsum dolor sit amet',
-  //     'lorem ipsum dolor sit amet',
-  //   ],]
-  // },
   {
     id: '11',
     title: 'Broadway, Queens, NY',
@@ -291,51 +9,51 @@ export const dummyJobSiteObj: JobSite[] = [
     categories: [
       {
         name : 'Sidewalk Shed',
-        categoryItems : [[
-          '4',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '5',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '6',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [ {
+          id: '1',
+          item : 'G4229',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '2',
+          item : 'M7241',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '3',
+          item : 'M9479',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        }]
       },
       {
         name : 'Scaffold',
-        categoryItems : [[
-          '41',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '51',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '61',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '5',
+          item : 'A6846',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '6',
+          item : 'F3785',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        }]
       }
     ]
   },
@@ -347,51 +65,51 @@ export const dummyJobSiteObj: JobSite[] = [
     categories: [
       {
         name : 'Sidewalk Shed',
-        categoryItems : [[
-          '4',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '5',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '6',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [  {
+          id: '6',
+          item : 'F3785',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '7',
+          item : 'E1241',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '8',
+          item : 'B3666',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       },
       {
         name : 'Scaffold',
-        categoryItems : [[
-          '41',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '51',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '61',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [  {
+          id: '6',
+          item : 'F3785',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '7',
+          item : 'E1241',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '8',
+          item : 'B3666',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       }
     ]
   },
@@ -403,51 +121,51 @@ export const dummyJobSiteObj: JobSite[] = [
     categories: [
       {
         name : 'Sidewalk Shed',
-        categoryItems : [[
-          '4',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '5',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '6',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '5',
+          item : 'A6846',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '6',
+          item : 'F3785',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       },
       {
         name : 'Scaffold',
-        categoryItems : [[
-          '41',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '51',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '61',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '5',
+          item : 'A6846',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '6',
+          item : 'F3785',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       }
     ]
   },
@@ -459,51 +177,58 @@ export const dummyJobSiteObj: JobSite[] = [
     categories: [
       {
         name : 'Sidewalk Shed',
-        categoryItems : [[
-          '4',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '5',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '6',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '5',
+          item : 'A6846',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '6',
+          item : 'F3785',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       },
       {
         name : 'Scaffold',
-        categoryItems : [[
-          '41',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '51',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '61',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '1',
+          item : 'G4229',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '2',
+          item : 'M7241',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '3',
+          item : 'M9479',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       }
     ]
   },
@@ -515,51 +240,65 @@ export const dummyJobSiteObj: JobSite[] = [
     categories: [
       {
         name : 'Sidewalk Shed',
-        categoryItems : [[
-          '4',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '5',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '6',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '1',
+          item : 'G4229',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '2',
+          item : 'M7241',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '3',
+          item : 'M9479',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       },
       {
         name : 'Scaffold',
-        categoryItems : [[
-          '41',
-          'S2507',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '51',
-          'A6846',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],
-        [
-          '61',
-          'F3785',
-          '10',
-          'lorem ipsum dolor sit amet',
-          'lorem ipsum dolor sit amet',
-        ],]
+        categoryItems : [{
+          id: '1',
+          item : 'G4229',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '2',
+          item : 'M7241',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '3',
+          item : 'M9479',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },
+        {
+          id: '4',
+          item : 'S2507',
+          quantity : '10',
+          description : 'lorem ipsum dolor sit amet',
+          notes : 'lorem ipsum dolor sit amet'
+        },]
       }
     ]
   },
@@ -607,6 +346,65 @@ export const statuses = [
     key: 106,
   },
 ];
+
+export const siteTableDataObj = [
+  {
+    id: '1',
+    item : 'G4229',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '2',
+    item : 'M7241',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '3',
+    item : 'M9479',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '4',
+    item : 'S2507',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '5',
+    item : 'A6846',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '6',
+    item : 'F3785',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '7',
+    item : 'E1241',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+  {
+    id: '8',
+    item : 'B3666',
+    quantity : '10',
+    description : 'lorem ipsum dolor sit amet',
+    notes : 'lorem ipsum dolor sit amet'
+  },
+]
 
 export const siteTableData = [
   [
