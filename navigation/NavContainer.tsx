@@ -11,6 +11,7 @@ import Icon3 from 'react-native-vector-icons/Fontisto';
 import Icon4 from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon5 from 'react-native-vector-icons/FontAwesome5';
 import Basic from '../screens/Basic';
+import PdfBasic from '../screens/PdfBasic';
 
 interface Props {}
 
@@ -19,6 +20,7 @@ const HomeStack = createNativeStackNavigator();
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
+      <HomeStack.Screen name="PdfBasic" component={PdfBasic}  options={{ headerShown: false }}/>
        {/* <HomeStack.Screen name="Basic" component={Basic}  options={{ headerShown: false }}/> */}
        <HomeStack.Screen name="Dashboard" component={Dashboard}  options={{ headerShown: false }}/>
         <HomeStack.Screen name="Jobsite" component={JobSite}  options={{ headerShown: false }}/>
